@@ -1,0 +1,34 @@
+{
+  "name": "gulp-angular-json",
+  "version": "0.0.1",
+  "author": "otaviodecampos",
+  "description": "Create angular components by json",
+  "license": "MIT",
+  "maintainers": [
+    "otaviodecampos <otaviodecampos@hotmail.com>"
+  ],
+  "keywords": [
+    "angular",
+    "json",
+    "component",
+    "module",
+    "constant",
+    "create"
+  ],
+  "main": "lib/index.js",
+  "dependencies": {
+    "event-stream": "^3.3.1",
+    "lodash": "^3.10.1"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/otaviodecampos/gulp-angular-json.git"
+  },
+  "homepage": "https://github.com/otaviodecampos/gulp-angular-json#readme"
+}

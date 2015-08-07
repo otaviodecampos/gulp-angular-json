@@ -1,0 +1,16 @@
+{
+    "scope": {
+        "source-dir": "app/source/",
+        "target-dir": "app"
+    },
+    "context": {
+        "build": {
+            "default": true,
+            "task-dir": "tasks",
+            "clean": true,
+            "task": {
+                "example": true
+            }
+        }
+    }
+}

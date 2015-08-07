@@ -1,0 +1,13 @@
+{
+    "$constant": {
+        "$name": "APPDEMO",
+        "$module": "app"
+    },
+    "name": "Demo",
+    "version": "0.0.1",
+    "description": "Gulp-Angular-Json Demo",
+    "author": {
+        "name": "otaviodecampos",
+        "email": "otaviodecampos@hotmail.com"
+    }
+}
