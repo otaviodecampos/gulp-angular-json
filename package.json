@@ -1,6 +1,6 @@
 {
   "name": "gulp-angular-json",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "author": "otaviodecampos",
   "description": "Create angular components by json",
   "license": "MIT",
