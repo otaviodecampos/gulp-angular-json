@@ -4,6 +4,7 @@
     angular.module('app', [
         
         'app.templates', 
+        'app.asd' 
 
     ]);
 
@@ -13,7 +14,7 @@
     'use strict'
 
     angular.module('app')
-        .constant('', Constant());
+        .constant('APPDEMO', Constant());
 
     function Constant() {
         return {
