@@ -1,5 +1,5 @@
 var gulp = require('gulp')
-    , gulpaj = require('../../lib')
+    , ngjson = require('../../lib')
     , concat = require('gulp-concat');
 
 module.exports = function () {

@@ -1,7 +1,6 @@
 {
     "name": "app",
     "dependencies": [
-        "app.templates",
-        "app.asd"
+        "app.templates"
     ]
 }

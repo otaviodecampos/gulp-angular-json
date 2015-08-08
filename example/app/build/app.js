@@ -3,8 +3,7 @@
 
     angular.module('app', [
         
-        'app.templates', 
-        'app.asd' 
+        'app.templates'
 
     ]);
 
