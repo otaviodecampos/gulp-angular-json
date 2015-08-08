@@ -3,7 +3,7 @@
 
     angular.module('app', [
         
-        'app.templates'
+        'app.templates' 
 
     ]);
 
@@ -19,7 +19,7 @@
         return {
           "name": "Demo",
           "version": "0.0.1",
-          "description": "Gulp-Angular-Json Demo",
+          "description": "gulp-ng-json example",
           "author": {
                     "name": "otaviodecampos",
                     "email": "otaviodecampos@hotmail.com"
