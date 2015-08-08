@@ -1,6 +1,6 @@
 {
-  "name": "gulp-angular-json",
-  "version": "0.0.3",
+  "name": "gulp-ng-json",
+  "version": "0.0.5",
   "author": "otaviodecampos",
   "description": "Create angular components by json",
   "license": "MIT",
@@ -28,7 +28,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/otaviodecampos/gulp-angular-json.git"
+    "url": "git+https://github.com/otaviodecampos/gulp-ng-json.git"
   },
-  "homepage": "https://github.com/otaviodecampos/gulp-angular-json#readme"
+  "homepage": "https://github.com/otaviodecampos/gulp-ng-json#readme"
 }
