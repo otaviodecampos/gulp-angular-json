@@ -1,4 +1,4 @@
-# gulp-ng-json
+# gulp-angular-json
 
 Create angular components from json
 
