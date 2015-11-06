@@ -11,9 +11,9 @@
   "dependencies": {
     "gulp": "^3.9.0",
     "gulp-concat": "^2.6.0",
-    "gulp-context": "0.0.8"
+    "gulp-context": "*"
   },
   "devDependencies": {
-    "gulp-ng-json": "0.0.6"
+    "gulp-ng-json": "*"
   }
 }

@@ -1,8 +1,4 @@
 {
-    "$constant": {
-        "$name": "APPDEMO",
-        "$module": "app"
-    },
     "name": "Demo",
     "version": "0.0.1",
     "description": "gulp-ng-json example",

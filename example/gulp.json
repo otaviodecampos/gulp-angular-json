@@ -1,0 +1,14 @@
+{
+    "build": {
+        "default": true,
+        "task-dir": "tasks",
+        "clean": true,
+        "task": {
+            "ngjson": true
+        },
+        "path": {
+            "srcDir": "src",
+            "buildDir": "dist"
+        }
+    }
+}

@@ -4,12 +4,12 @@ var gulp = require('gulp')
 
 module.exports = function () {
 
-    var input = this.input(this.sourceDir, ['**/*.json']);
+    var input = this.input(this.srcDir, ['**/*.json']);
 
     return gulp.src(input)
         .pipe(ngjson.constant())
         .pipe(ngjson.module())
         .pipe(concat('app.js'))
-        .pipe(gulp.dest(this.targetDir));
+        .pipe(gulp.dest(this.buildDir));
 
 }

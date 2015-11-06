@@ -1,6 +1,6 @@
 {
     "name": "app",
     "dependencies": [
-        "app.templates"
+        "dep-example"
     ]
 }
