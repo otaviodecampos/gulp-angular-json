@@ -1,0 +1,6 @@
+{
+    "name": "admin",
+    "url": "",
+    "abstract": true,
+    "templateUrl": "example.tpl.html"
+}
