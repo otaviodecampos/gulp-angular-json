@@ -35,14 +35,14 @@
     angular.module('app')
         .config(State);
 
-    /* @ngInject */
-    function State($urlRouterProvider, $stateProvider) {
+    State.$inject = ['$stateProvider'];
+    function State($stateProvider) {
 
         $stateProvider
             .state('admin', {
-				"url": "",
-				"abstract": true,
-				"templateUrl": "example.tpl.html"
+				"url": "",
+				"abstract": true,
+				"templateUrl": "example.tpl.html"
 });
 
     };
