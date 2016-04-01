@@ -1,11 +1,16 @@
 {
   "name": "gulp-ng-json",
-  "version": "0.0.13",
-  "author": "otaviodecampos",
+  "version": "0.0.15",
+  "author": {
+    "name": "otaviodecampos"
+  },
   "description": "Create angular components by json",
   "license": "MIT",
   "maintainers": [
-    "otaviodecampos <otaviodecampos@hotmail.com>"
+    {
+      "name": "otaviodecampos",
+      "email": "otaviodecampos@hotmail.com"
+    }
   ],
   "keywords": [
     "angular",
@@ -30,5 +35,14 @@
     "type": "git",
     "url": "git+https://github.com/otaviodecampos/gulp-ng-json.git"
   },
-  "homepage": "https://github.com/otaviodecampos/gulp-ng-json#readme"
+  "homepage": "https://github.com/otaviodecampos/gulp-ng-json#readme",
+  "readme": "# gulp-angular-json\r\n\r\nCreate angular components from json\r\n\r\n## Installation\r\n\r\n```\r\n$ npm install gulp-ng-json --save-dev\r\n```\r\n\r\n\r\n## Usage\r\n\r\n#### Create constants from json\r\n\r\nCreate a json like this\r\n```json\r\n// app.constant.json\r\n{\r\n\t\"name\": \"Demo\",\r\n    \"version\": \"0.0.1\",\r\n    \"description\": \"gulp-ng-json demo\"\r\n}\r\n```\r\n\r\nCreate gulp task like this\r\n\r\n```javascript\r\nvar gulp = require('gulp')\r\n\t, ngjson = require('gulp-ng-json')\r\n\t, concat = require('gulp-concat');\r\n\r\ngulp.task('test', function () {\r\n  gulp.src('**/*.json')\r\n  .pipe(ngjson.constant())\r\n  .pipe(concat('app.js'))\r\n  .pipe(gulp.dest('.'));\r\n});\r\n```\r\n\r\nAnd app.js will be generated like this\r\n```javascript\r\n(function() {\r\n    'use strict'\r\n\r\n    angular.module('app')\r\n        .constant('APP', Constant());\r\n\r\n    function Constant() {\r\n        return {\r\n          \"name\": \"Demo\",\r\n          \"version\": \"0.0.1\",\r\n          \"description\": \"gulp-ng-json demo\"\r\n\t\t}\r\n    }\r\n\r\n})();\r\n```\r\n\r\n#### Create modules from json\r\n\r\nCreate a json like this\r\n```json\r\n// app.module.json\r\n{\r\n    \"name\": \"app\",\r\n    \"dependencies\": [\r\n        \"app.templates\"\r\n    ]\r\n}\r\n```\r\n\r\nCreate gulp task like this\r\n\r\n```javascript\r\nvar gulp = require('gulp')\r\n\t, ngjson = require('gulp-ng-json')\r\n\t, concat = require('gulp-concat');\r\n\r\ngulp.task('test', function () {\r\n  gulp.src('**/*.json')\r\n  .pipe(ngjson.module())\r\n  .pipe(concat('app.js'))\r\n  .pipe(gulp.dest('.'));\r\n});\r\n```\r\n\r\nAnd app.js will be generated like this\r\n```javascript\r\n(function() {\r\n    'use strict'\r\n\r\n    angular.module('app', [\r\n        'app.templates'\r\n    ]);\r\n\r\n})();\r\n```\r\n\r\n\r\n## Options\r\n\r\n#### Constants\r\n\r\nYou can specify the name of the constant and the module name where the constant is included.\r\n\r\n```json\r\n{\r\n    \"$constant\": {\r\n        \"$name\": \"APPDEMO\",\r\n        \"$module\": \"app\"\r\n    }\r\n}\r\n```\r\n\r\nBy default they are converted json extension \"* .constant.json\", but you can pass the regular expression used.\r\n\r\n```javascript\r\nvar options = {matcher: /[\\w-]+.constant.json$/g};\r\nngjson.constant(options);\r\n```\r\n\r\n###### Other options\r\n\r\n| Option        | Description | Value\r\n| ------------- |-------------| -----\r\n| matcher       | Filename to be sought | regex\r\n| nominator     | Define the constant name | function\r\n| parser        | Json converter to object | function\r\n| automodule    | Search module.json to set the module that constant will be included | boolean\r\n| template      | Template file path that will be used to create a constant | string\r\n\r\n#### Modules\r\n\r\n```javascript\r\nvar options = {matcher: /[\\w-]+.module.json$/g};\r\nngjson.module(options);\r\n```\r\n\r\nAs well as constant, the modules can be informed with specific options\r\n\r\n| Option        | Description | Value\r\n| ------------- |-------------| -----\r\n| matcher       | Filename to be sought | regex\r\n| template     | Template file path that will be used to create a constant  | string\r\n",
+  "readmeFilename": "readme.md",
+  "gitHead": "06a55a3f495ab4af7760399ad26a2c2427732b3a",
+  "bugs": {
+    "url": "https://github.com/otaviodecampos/gulp-ng-json/issues"
+  },
+  "_id": "gulp-ng-json@0.0.13",
+  "_shasum": "6a17f028f0c41717718a9164dbd4bc6768ec5ee1",
+  "_from": "gulp-ng-json@0.0.13"
 }
